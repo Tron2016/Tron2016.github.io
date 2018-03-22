@@ -13,6 +13,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script>
+			function changeImage(){
+			var elem=document.getElementById("predict");
+			elem.src=elem.src+'?rand='+new Date();
+			}
+                        window.onload=changeImage;
+		</script>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -62,7 +69,7 @@
 									<div class="row">
 										<div class="5u 12u(mobile)">
 											<section>
-												<a href="#" class="image featured"><img src="http://18.188.114.161:8080/static/result.png?rand=hxsgi9" alt="" /></a>
+												<a href="#" class="image featured"><img id="predict" src="http://18.188.114.161:8080/static/result.png" alt="" /></a>
 												<header class="second icon fa-bar-chart-o">
 													<h3>Today's Bitcoin</h3>
 													<p>up or down?</p>
