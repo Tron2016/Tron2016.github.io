@@ -17,6 +17,8 @@
 			function changeImage(){
 			var elem=document.getElementById("predict");
 			elem.src=elem.src+'?rand='+new Date();
+			var elem2=document.getElementById("reward");
+			elem2.src=elem2.src+'?rand='+new Date();
 			}
                         window.onload=changeImage;
 		</script>
@@ -70,19 +72,25 @@
 										<div class="5u 12u(mobile)">
 											<section>
 												<a href="#" class="image featured"><img id="predict" src="http://18.188.114.161:8080/static/result.png" alt="" /></a>
-												<header class="second icon fa-bar-chart-o">
+												<header class="second icon fa-user">
 													<h3>Today's Bitcoin</h3>
 													<p>up or down?</p>
+												</header>
+											</section>
+										</div>
+										<div class="5u 12u(mobile)">
+											<section>
+												<a href="#" class="image featured"><img id="reward" src="http://18.188.114.161:8080/static/figure.png" alt="" /></a>
+												<header class="second icon fa-bar-chart-o">
+													<h3>History reward</h3>
+													<p>good or bad?</p>
 												</header>
 											</section>
 										</div>
 									</div>
 									<div class="row">
 										<div class="12u">
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper
-											bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod
-											quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit
-											amet pulvinar. Nam nec turpis.</p>
+											<p>The left image shows the predict of deep learning.The result is updated everyday at 0:05(UTC).There will be more features</p>
 										</div>
 									</div>
 								</section>
@@ -222,12 +230,8 @@
 
 								<!-- About -->
 									<section>
-										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
-										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
-										template by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
-										It's <a href="http://html5up.net/license/">Creative Commons Attribution</a>
-										licensed so use it for any personal or commercial project (just credit us
-										for the design!).</p>
+										<h2><strong>CVINET</strong> by Tron</h2>
+										<p>Hi! This is <strong>CVINET</strong>, a free HTML5 site aplying deep learning to life.</p>
 										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
 									</section>
 
